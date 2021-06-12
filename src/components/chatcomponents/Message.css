@@ -1,0 +1,44 @@
+.message {
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    text-align: left;
+    max-width: 60%;
+}
+
+.messageHeader {
+    font-size: 12px;
+    color: #555555;
+}
+
+.message .avatar {
+    width: 30px;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    transform: unset;
+}
+
+.messageUser {
+    margin-left: auto;
+    color: var(--white);
+}
+
+.userCard {
+    background-color:var(--purple);
+    position: relative;
+    margin-left: auto;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.otherCard {
+    background-color: var(--grey);
+    width: fit-content;
+    position: relative;
+    border-radius: 15px;
+}
+
+.messageText {
+    padding: 15px;
+}

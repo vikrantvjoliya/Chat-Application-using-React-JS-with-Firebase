@@ -1,0 +1,79 @@
+.chat {
+	flex: 1;
+	height: calc(100vh - 218px);
+	position: relative;
+	overflow: hidden;
+    overflow-y: auto;
+}
+
+.content {
+	display: flex;
+}
+
+.welcome {
+	margin: auto;
+	padding: 10px;
+}
+
+
+.form {
+	text-align: center;
+	background-color: var(--grey);
+	position: fixed;
+	padding: 20px;
+	bottom: 60px;
+	left: 0;
+	z-index: 1;
+	width: calc(100% - 40px);
+}
+
+.avatar {
+	transform: translateY(10px);
+	width: 40px;
+	border-radius: 50%;
+}
+
+.formcontrol {
+	display: flex;
+	flex-direction: row;
+}
+
+.formmessage {
+	flex: 1;
+	min-width: 100px;
+	font-family: "Montserrat", sans-serif;
+	border: none;
+	padding: 15px;
+	border-radius: 50px;
+	color: rgb(255, 145, 0);
+}
+
+.formmessage:focus, .formbutton:focus {
+	outline: none;
+}
+
+.formbutton {
+	flex: 0;
+	color: var(--purple);
+	padding: 10px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	background: transparent;
+}
+
+.formbutton:disabled {
+	cursor: not-allowed;
+}
+
+.formbutton i {
+	font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.messages {
+		min-height: calc(100vh - 323px);
+	}
+}
